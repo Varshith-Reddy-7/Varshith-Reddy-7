@@ -1,0 +1,27 @@
+name: Total Forks
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  forks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Calculate Forks
+        run: |
+          TOTAL=$(curl -s https://api.github.com/users/Varshith-Reddy-7/repos?per_page=100 | jq '[.[].forks_count] | add')
+          mkdir -p stats
+          echo "{\"schemaVersion\":1,\"label\":\"TOTAL FORKS\",\"message\":\"$TOTAL\",\"color\":\"red\"}" > stats/forks.json
+
+      - name: Commit
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git add stats/forks.json
+          git commit -m "Update forks" || exit 0
+          git push
