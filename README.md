@@ -7,6 +7,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=1000&color=FF3C3C&center=true&vCenter=true&width=600&lines=Welcome+to+my+Profile!;My+Name+Is+Varshith+Reddy; Currently+Learning+Computer+Science" alt="Typing SVG" />
   </a>
 </div>
+<br>
 
 <table align="center">
 <tr>
@@ -31,8 +32,10 @@
 </table>
 
 ## 📝 Languages & Skills
+<br>
 
 [![C](https://ziadoua.github.io/m3-Markdown-Badges/badges/C/c1.svg)](https://github.com/Varshith-Reddy-7)
+<br>
 
 <a href="https://github.com/MohammedDev-yt">
   <img width="100%" alt="Thanks For Watching" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,5,20,30&height=150&section=footer&text=Thanks%20For%20Watching&fontSize=40&fontAlignY=68&fontColor=ffffff&animation=fadeIn"/>
